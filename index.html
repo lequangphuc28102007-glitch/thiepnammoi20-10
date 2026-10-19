@@ -660,6 +660,316 @@
     width: 100%;
 }
 
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* ========== RESPONSIVE MOBILE ========== */
+@media screen and (max-width: 768px) {
+    
+    .boxLetter {
+        padding: 10px;
+        overflow-y: auto;
+    }
+    .boxLetter .formLetter {
+        overflow-y: auto;
+        max-height: 85vh;
+    }
+    /* Envelope & card */
+    .envelope {
+        width: 260px;
+        height: 175px;
+    }
+    .envelope:before {
+        width: 184px;
+        height: 184px;
+        top: -92px;
+        left: 38px;
+    }
+    .card {
+        width: 234px;
+        height: 148px;
+        top: 5px;
+        left: 13px;
+    }
+    .card:before {
+        width: 208px;
+        height: 122px;
+        left: 10px;
+        top: 10px;
+    }
+    .text {
+        font-size: 22px;
+        line-height: 22px;
+        top: 16px;
+        left: 70px;
+    }
+    .heart {
+        height: 24px;
+        width: 24px;
+        top: 95px;
+        left: 90px;
+    }
+    .heart:before,
+    .heart:after {
+        height: 24px;
+        width: 24px;
+    }
+    .heart:before {
+        top: -12px;
+    }
+    .heart:after {
+        left: 12px;
+    }
+    .front {
+        border-right: 156px solid #f4978e;
+        border-top: 82px solid transparent;
+        border-bottom: 87px solid transparent;
+        left: 104px;
+    }
+    .front:before {
+        border-left: 260px solid #f8ad9d;
+        border-top: 169px solid transparent;
+        left: -104px;
+        top: -82px;
+    }
+    .shadow {
+        width: 280px;
+        height: 20px;
+        top: 230px;
+        left: -10px;
+    }
+    .valentines {
+        top: 30px;
+    }
+
+    /* Letter form modal */
+    .boxLetter .formLetter,
+    .boxLetter .before {
+        width: 92vw;
+        max-width: 380px;
+        height: auto;
+        min-height: 280px;
+        padding: 15px 10px;
+    }
+    .boxLetter .before {
+        transform: rotate(-8deg);
+    }
+    .formLetter .wrapperLetter {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    .giftbox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .giftbox .img {
+        position: relative;
+        width: 120px;
+        bottom: 0;
+        left: 0;
+    }
+    .textLetter h2 {
+        font-size: 22px;
+    }
+    .textLetter .contentLetter {
+        font-size: 15px;
+        padding: 0 12px;
+        margin-top: 6px;
+        line-height: 1.4;
+    }
+    .fa-xmark {
+        right: 12px;
+        top: 12px;
+        font-size: 22px;
+    }
+    .mewmew1, .mewmew2 {
+        width: 60px;
+    }
+    .heartAnimation {
+        width: 120px;
+    }
+    .letters {
+        width: 50px;
+    }
+
+    /* Rose SVG */
+    .container svg {
+        width: 90%;
+        height: auto;
+    }
+    svg {
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .envelope {
+        width: 220px;
+        height: 150px;
+    }
+    .envelope:before {
+        width: 156px;
+        height: 156px;
+        top: -78px;
+        left: 32px;
+    }
+    .card {
+        width: 198px;
+        height: 126px;
+        left: 11px;
+    }
+    .card:before {
+        width: 176px;
+        height: 104px;
+        left: 8px;
+        top: 8px;
+    }
+    .text {
+        font-size: 18px;
+        line-height: 18px;
+        top: 12px;
+        left: 55px;
+    }
+    .heart {
+        height: 20px;
+        width: 20px;
+        top: 80px;
+        left: 75px;
+    }
+    .heart:before,
+    .heart:after {
+        height: 20px;
+        width: 20px;
+    }
+    .heart:before {
+        top: -10px;
+    }
+    .heart:after {
+        left: 10px;
+    }
+    .front {
+        border-right: 132px solid #f4978e;
+        border-top: 70px solid transparent;
+        border-bottom: 74px solid transparent;
+        left: 88px;
+    }
+    .front:before {
+        border-left: 220px solid #f8ad9d;
+        border-top: 144px solid transparent;
+        left: -88px;
+        top: -70px;
+    }
+    .shadow {
+        width: 240px;
+        top: 195px;
+        left: -10px;
+    }
+    .boxLetter .formLetter,
+    .boxLetter .before {
+        width: 94vw;
+        max-width: 340px;
+        min-height: 260px;
+        padding: 12px 8px;
+    }
+    .giftbox .img {
+        width: 100px;
+    }
+    .textLetter h2 {
+        font-size: 18px;
+    }
+    .textLetter .contentLetter {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+    .mewmew1, .mewmew2 {
+        width: 50px;
+    }
+    .heartAnimation {
+        width: 90px;
+    }
+    .letters {
+        width: 42px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .envelope {
+        width: 190px;
+        height: 130px;
+    }
+    .envelope:before {
+        width: 134px;
+        height: 134px;
+        top: -67px;
+        left: 28px;
+    }
+    .card {
+        width: 170px;
+        height: 110px;
+        left: 10px;
+    }
+    .card:before {
+        width: 150px;
+        height: 90px;
+        left: 7px;
+        top: 7px;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 16px;
+        top: 10px;
+        left: 45px;
+    }
+    .heart {
+        height: 16px;
+        width: 16px;
+        top: 70px;
+        left: 65px;
+    }
+    .heart:before,
+    .heart:after {
+        height: 16px;
+        width: 16px;
+    }
+    .heart:before {
+        top: -8px;
+    }
+    .heart:after {
+        left: 8px;
+    }
+    .front {
+        border-right: 114px solid #f4978e;
+        border-top: 60px solid transparent;
+        border-bottom: 64px solid transparent;
+        left: 76px;
+    }
+    .front:before {
+        border-left: 190px solid #f8ad9d;
+        border-top: 124px solid transparent;
+        left: -76px;
+        top: -60px;
+    }
+    .shadow {
+        width: 210px;
+        top: 170px;
+    }
+    .textLetter h2 {
+        font-size: 16px;
+    }
+    .textLetter .contentLetter {
+        font-size: 12px;
+    }
+    
+}
+
     </style>
 </head>
 
@@ -688,8 +998,7 @@
         <text dy="-2">
             <textPath style="font-family: fantasy;" xlink:href="#partialPath" startOffset="12">
                 🌹Happy Women's Day
-                🌹.........................................................................................................................................🌹From
-                With Love 20/10!🌹
+                🌹.........................................................................................................................................................................................
             </textPath>
         </text>
 
@@ -1103,7 +1412,7 @@
         // .textLetter text h2
         let indexText = 0;
         let textLetter = document.querySelector('.textLetter h2');
-        const textLetterH2 = "Gửi mẹ!";
+        const textLetterH2 = "Gửi các chị em!";
         let timoutTextLetter;
 
         function textCharLetter() {
@@ -1131,7 +1440,7 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Hôm nay là ngày 20/10/2024. Xin gửi lời chúc tới người con yêu thương nhất. Luôn vui vẻ, luôn hạnh phúc và luôn may mắn trong cuộc sống, ngày càng xinh đẹp. Xin gửi tất cả lời chúc tốt đẹp đến với mẹ. Love Mom💗";
+        const textLetterP = "Chúc chị em phụ nữ luôn đong đầy niềm vui, xinh đẹp rạng rỡ và luôn cảm nhận được tình yêu thương mỗi ngày. Mong rằng bạn sẽ luôn tự tin, vững bước gặt hái thành công trên mọi hành trình và theo đuổi ước mơ của riêng mình. Cảm ơn vì sự hiện diện ấm áp và tuyệt vời của bạn đã làm cho thế giới này thêm trọn vẹn và tươi đẹp!";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
